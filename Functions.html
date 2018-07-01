@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+	</head>
+	<body>
+		<script type="text/javascript">
+			
+			function funky(){
+				
+				// Creates a popup on the screen
+				alert("oooouuuch!");
+				
+							
+			}
+			
+			// Parameters don't require types
+			function meatball(x){
+				
+				alert("I love " + x);
+			}
+							
+			
+			// Call jscript function with parameters
+			meatball("bacon");
+			
+			
+			// Multiple parameters
+			function apples(x, y){
+				// concatenate html break tag for new line
+				document.write(x + " is better than " + y + "<br />")
+				
+			}
+			
+			apples("Adam", "Sam")
+			apples("Apples", "Pears")
+			
+			
+			// Return statements
+			function addit(x, y){
+				return x+y
+			}
+			
+			document.write(addit(1,2))
+			
+			
+		</script>
+
+		<!-- Form is created in the html section, references javascript function -->
+		<form>
+			<!-- Calling functions in quotes - object -->
+			<input type="button" value="touch me" onclick="funky()">
+		</form>
+		
+	</body>
+</html>

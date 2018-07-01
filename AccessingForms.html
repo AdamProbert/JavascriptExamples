@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+	<script type="text/javascript">
+		
+			// A validator function that will determine if a checkbox is checked
+			function validator(){
+				if(document.validForm.thebox.checked){
+					alert("Yep it's checked!");
+				}
+				else{
+					alert("You better check that fam!");
+				}
+			}
+			
+		</script>
+		
+	</head>
+	<body>
+	
+		<form name="BuckysForm">
+			
+			Username: <input type="text" name="username" />
+			Password: <input type="password" name="password" />
+			<input type="submit" value="Submit!" />
+			
+		</form>
+		
+		<form name="validForm">
+		
+			<input type="checkbox" name="thebox" />
+			<input type="button" value="press me" onClick="validator()" />
+		
+		</form>
+		
+		<script type="text/javascript">
+		
+					
+			// All forms on a website are stored in a form array automatically
+			var lengthOfForm = document.forms[0].length // first form on the document/page
+			
+			document.write(lengthOfForm) // Prints 3 - for each element in the form
+			
+			
+			// Ability to access any element in any form using associative array
+			var x = document.BuckysForm.username.name;
+			document.write(x)
+			
+					
+		</script>
+	</body>
+</html>

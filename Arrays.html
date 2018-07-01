@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+	</head>
+	<body>
+		
+		<script type="text/javascript">
+			// Two ways of creating arrays
+			var people = new Array("A", "B", "C", "D", "E");
+			document.write(people[0] + "<br />");
+			document.write(people + "<br />");
+			
+			for(x=0; x<people.length; x++){
+				document.write(people[x]);
+			}
+			
+			// And the second way
+			var things = new Array(3);
+			things[0] = "thing 1";
+			things[1] = "thing 2";
+			things[2] = "thing 3";
+			
+			document.write("<br />")
+			for(x=0; x<things.length; x++){
+				document.write(things[x] + "<br />");
+			}
+			
+			// Can also create an array without length
+			var stuff = new Array();
+			
+			stuff[32] = "baconator"
+			stuff[999] = "big baconator"
+			
+			document.write(stuff[32]+ "<br />");
+			document.write(stuff[999]+ "<br />");
+			document.write(stuff[1]+ "<br />"); // prints undefined. Cool, man cool.
+			document.write(stuff[1000]+ "<br />"); // Also undefined
+			
+						
+			/* Propeties
+			
+			array.length
+			array.concat(2nd array) 	- concatenate two arrays
+			array.join(concatenator)	- array to string with optional concatenator, default: ','
+			array.pop()					- Pops last element
+			array.push()				- Pushes element to beginning
+			array.reverse()
+			array.sort()
+			
+			*/
+			
+			// filling array in loop
+			var crap = new Array();
+			for(i=0; i<3; i++){
+				crap[i] = i
+			}
+			
+						
+			document.write(crap + "<br />")
+			
+		</script>
+	</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		
+		<script type="text/javascript">
+			// If not printing anything put it in the head
+				
+			// for many objects
+			function person(name, age){
+				this.name = name;
+				this.age = age;
+				// Associating functions with objects
+				// Kind of weird, functions are external to object and then mapped using the below
+				this.yearsUntilRetire = yearsLeft;
+				
+			}
+			
+			// Years until you reach 65
+			function yearsLeft(){
+				var numYears = 65-this.age;
+				return numYears;
+			}
+			
+			var bucky = new person("bucky", 32);
+			var taylor = new person("taylor", 20);
+		
+		
+			// Initialising objects for few objects
+			jenkins = {name:"Jenkins", age:40};
+			
+						
+		</script>
+	</head>
+	<body>
+		
+		<script type="text/javascript">
+			
+			document.write(bucky.age)
+			document.write(jenkins.age)
+			// Calling an objects function
+			document.write(bucky.yearsUntilRetire())
+		</script>
+		
+		
+		
+	</body>
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+	</head>
+	<body>
+		<script type="text/javascript">
+			
+			// All of your standard comparators
+			// Java syntax
+			var apples = 20;
+			var hotdogs = 53;
+			
+			if(apples==hotdogs){
+				document.write(apples + " does equal " + hotdogs);
+			}
+			
+			if(apples!=hotdogs){
+				document.write(apples + " does not equal " + hotdogs);
+			}
+			
+			if(apples > hotdogs){
+				document.write(apples + " is greater than " + hotdogs);
+			}
+			
+			if(apples < hotdogs){
+				document.write(apples + " is less than " + hotdogs);
+			}
+			
+			// if else statement
+			if(apples==hotdogs){
+				document.write(apples + " does equal " + hotdogs);
+			}
+			else{
+				document.write(apples + " does not equal " + hotdogs);
+			}
+			
+			// complex conditions
+			// &&, double pipe
+			if(apples<hotdogs && apples!=hotdogs){
+				document.write("apples is for sure less than hotdogs");
+			}
+			
+			
+			// Switch statements
+			switch(apples){
+				case 10:
+					document.write("apples = 10");
+					break;
+					
+				case 20:
+					document.write("apples = 20");
+					break;
+					
+				case 30:
+					document.write("apples = 30");
+					break;
+					
+				case apples<30:
+					document.write("apples is less than 30");
+					break;
+					
+				default:
+					document.write("Apples are all fucked")
+					
+			}
+			
+		</script>
+	
+	</body>
+</html>
